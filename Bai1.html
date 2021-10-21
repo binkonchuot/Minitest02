@@ -6,18 +6,20 @@
 </head>
 <body>
 <script>
-    let arr = [2,4,6,7,9,5];
-    function evenNumb(arr) {
-        let count = 0;
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 === 0) {
-                count++;
-            }
+    let arr = [4,7,3,9,5,2];
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (findEven(arr[i])) {
+            count++;
         }
-            alert(count)
     }
-    evenNumb(arr)
-</script>
+    document.write('Số lượng số chẵn trong mảng:' + ' ' + count)
 
+    function findEven(x) {
+        if (x % 2 === 0) {
+            return true;
+        }
+    }
+</script>
 </body>
 </html>
