@@ -5,6 +5,19 @@
     <title>Bai 2</title>
 </head>
 <body>
-
+<script>
+    let array = ["5", "8", "3", "4", "2", "a", "b", "d"];
+    let count = 0;
+    let inputElement = prompt('Nhập vào 1 phần tử:');
+    function findElement(){
+        for (let i = 0; i < array.length; i++) {
+            if (inputElement === array[i]) {
+                count++;
+            }
+        }
+        document.write('Số lần xuất hiện phần tử'+' '+inputElement+' '+'là'+' '+count+' '+'lần');
+    }
+    findElement();
+</script>
 </body>
 </html>
