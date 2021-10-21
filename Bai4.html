@@ -6,17 +6,25 @@
 </head>
 <body>
 <script>
-    let arr =
-    function sumPrime(){
-        let sum = 0;
-        for (let i = 0, i <= 500, i++) {
-            if (arr[i] % i == 0) {
-                sum = sum + i;
+    function isPrime(number) {
+        if (number <= 1) {
+            return false;
+        } else {
+            for (let i = 2; i < number; i++) {
+                if (number % i === 0) {
+                    return false;
+                }
             }
+            return true;
         }
-        return sum;
-        console.log(sum);
     }
+    let sumPrime=0;
+    for (let i=1;i<500;i++) {
+        if (isPrime(i)) {
+            sumPrime+=i;
+        }
+    }
+    document.write('Tổng các số nguyên tố nhỏ hơn 500 là:'+' '+ sumPrime);
 </script>
 </script>
 </body>
