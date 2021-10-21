@@ -6,16 +6,15 @@
 </head>
 <body>
 <script>
-    function isPrime(number) {
-        if (number <= 1) {
+    function isPrime(numb) {
+        if (numb <= 1) {
             return false;
         } else {
-            for (let i = 2; i < number; i++) {
-                if (number % i === 0) {
+            for (let i = 2; i < numb; i++) {
+                if (numb % i === 0) {
                     return false;
                 }
-            }
-            return true;
+            } return true;
         }
     }
     let sumPrime=0;
