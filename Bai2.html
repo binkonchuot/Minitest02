@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
-    let array = ["5", "8", "3", "4", "2", "a", "b", "d"];
+    let array = ["7", "3", "6", "a", "2", "c", "9", "d"];
     let count = 0;
-    let inputElement = prompt('Nhập vào 1 phần tử:');
+    let inputNumb = prompt('Nhập vào 1 phần tử:');
     function findElement(){
         for (let i = 0; i < array.length; i++) {
-            if (inputElement === array[i]) {
+            if (inputNumb === array[i]) {
                 count++;
             }
         }
-        document.write('Số lần xuất hiện phần tử'+' '+inputElement+' '+'là'+' '+count+' '+'lần');
+        document.write('Số phần tử '+' '+inputNumb+' xuất hiện là '+' '+count+' '+'lần');
     }
     findElement();
 </script>
